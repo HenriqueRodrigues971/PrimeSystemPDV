@@ -1,0 +1,83 @@
+@charset "UTF-8";
+ /*
+            #9f9fcf- azul do background
+            #050579 - azul escuro
+            #fdfd00 - amarelo
+            #2ba32b - verde
+            */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    background-color: #9f9fcf;
+    border: 2px solid #050579;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #9f9fcf;
+}
+header h1{
+    text-shadow: 0px 0px 5px white;
+    
+}
+main section.azul{
+    margin-left: 5px;
+    background-color: #9f9fcf;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border:1px solid #050579;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+main section.azul:hover{
+  transform: scale(102%);
+  color: #2ba32b;
+  transition: transform 0.0;
+}
+main section#cadastro{
+    position: relative;
+}
+main  > div.verde{
+    position: fixed;
+  margin-left: 130px;
+  top: 180px;
+  color: black;
+  background-color: #2ba32b8e;
+  border: 1px solid #194419;
+  display: none;
+  list-style: none;
+  width: 150px;
+  padding-right: 10px;
+  padding-left: 1px;
+
+}
+main div.verde >a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+main div.verde >a#fc{
+    padding-right: 40%;
+}
+main div.verde >a#cl{
+    padding-right: 60%;
+}
+main div.verde >a#pd{
+    padding-right: 55%;
+}
+main div.verde >a#fn{
+    padding-right: 27%;
+}
+main div.verde a:hover{
+    color: white ;
+    background-color: #194419;
+    cursor: pointer;
+    
+}

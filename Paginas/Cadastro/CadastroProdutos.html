@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area de Cadastro-PrimeSystemPDV</title>
+    <style>
+         /*#9f9fcf- azul do background
+            #050579 - azul escuro
+            #fdfd00 - amarelo
+            #2ba32b - verde
+            */
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            height: 100vh;
+        }
+        header{
+            background-color: #9f9fcf;
+            padding: 5px;
+        }
+        header h1{
+            color: #9f9fcf;
+            text-shadow: 0px 0px 5px white;
+        text-align: center;
+        }
+        header div{
+            position: absolute;
+            float: left;
+            top: 10px;
+            padding: 5px;
+        }header div > a{
+            text-decoration: none;
+            color: black;
+            text-shadow: 0px 0px 3px white;
+        }
+        main{
+            margin-top: 5px;
+        }
+        main > section{
+            background-color: #9f9fcf;
+        
+        }
+        main > section > form{
+            margin-left: 15px;
+        }
+        main > section > form > p{
+            margin: 5px;
+            font-size: 1.3em;
+            background-color: #3c3c92;
+            border-radius: 5px;
+            
+        color: white;
+        }
+        main > section > form > p > input{
+            float: right;
+            width: 70%;
+            border-radius: 5px;
+            font-size: 0.8em;
+            
+        }
+        main > section > form > button{
+            display: block;
+        margin-left: auto;
+        margin-right: auto;
+            background-color: white;
+            padding: 10px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+        }
+        main > section > form > button:hover{
+            transform: scale(102%);
+        }
+        main > section > form > button:active{
+            background-color: #66c766 ;
+            color: white;
+            transform: scale(102%);
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Cadastro de Produtos</h1>
+        <div><a href="../principal.html"><=Voltar </a></div>
+    </header>
+    <main>
+   <section>
+    <form action="" autocomplete="off">
+        <p>
+            <label for="codigo">Código do produto:</label>
+           <input type="text" id="codigo" placeholder="Insira código do produto" alt="Insira o codigo do produto">
+        </p>
+        <p>
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Insira o nome do produto" title="Campo de inserir nome do produto">
+        </p>
+        <p>
+            <p><label for="descricao">Descrição: </label></p>
+            <textarea name="descricao" id="descricao" placeholder="Descrição do produto" title="Campo de inserir descrição" rows="5" cols="25" style="resize: none;"></textarea>
+        </p>
+        <p>
+            <label for="estoque">Estoque: </label>
+            <input type="number" name="estoque" id="estoque" placeholder="Insira o estoque do produto" title="Campo de inserir estoque do produto">
+        </p>
+        <p>
+       <label for="prcCusto">Custo: </label>
+       <input type="text" name="prcCusto" id="prcCusto" inputmode="numeric" pattern="[0-9,.]*"
+       placeholder="Insira o valor de custo">
+        </p>
+        <p>
+            <label for="prcVenda">Venda: </label>
+            <input type="text" name="prcVenda" id="prcVenda" inputmode="numeric" pattern="[0-9,.]*" placeholder="Insira o valor de venda">
+        </p>
+        
+            <button type="submit" id="cadastrar">Cadastrar</button>
+        
+    </form>
+   </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeSystemPDV-Login</title>
+    <style>
+       
+        *{
+            padding: 0px;
+            margin: 0px;
+            border-style: none;
+            /*
+            #9f9fcf- azul do background
+            #050579 - azul escuro
+            #fdfd00 - amarelo
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(116, 111, 111);
+        }
+        main{
+            width: 298px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 5px solid #050579;
+            background-color: #9f9fcf;
+            border-radius: 10px;
+           box-shadow: 0px 0px 5px rgb(0, 204, 255);
+            
+        }
+        
+        main h2{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 3px #fdfd00;
+            border-style: dotted;
+            border-color: rgb(253, 253, 0);
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 25px;
+        }
+        main form>section > p {
+            margin: 10px;
+            padding: 4px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 1.3em;
+            border-radius: 8px;
+        }
+       main form> section > p > input{
+        font-size: 0.8em;
+        padding: 2px;
+        float: right;
+        background-color: #9f9fcf;
+        border-radius:10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-shadow: 0px 0px 5px black;
+       }
+       main form> section > p > input:hover{
+     transform: scale(102%);
+     margin-left: 2px;
+       }
+       main > section > p#botao{
+        text-align: center;
+        
+       }
+       main form> section > button{
+        
+        background-color: white;
+        width: 278px;
+        height: 30px;
+        margin: 10px;
+        padding: 4px;
+        border-radius: 10px;
+        font-size: 1.3em;
+        
+       }
+       main form > section > button:hover{
+       
+        color: #18ff18;
+       }
+       main form > section > button:active{
+        background-color: #9f9fcf;
+        color: white;
+       }
+       main form > section > p#recuperarSenha{
+        text-align: center;
+       }
+       main form > section > p > a{
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        
+       }
+       main form > section > p > a:hover{
+        
+        color: red;
+       }
+       main form > section > p > a:active{
+        color: #a70000;
+       }
+    </style>
+</head>
+<body>
+    <main>
+            <h2>Login</h2>
+            <form action="Paginas/principal.html">
+                <section>
+                    <p>
+                        <label for="user">Usuario: </label>
+                        <input type="text" name="user" id="user" required>
+                    </p>
+                    <p>
+                        <label for="senha">Senha: </label>
+                        <input type="password" name="senha" id="senha" required>
+                    </p>
+                
+                </section>
+                <section>
+                    <button type="submit"><p>Entrar</p></button>
+                
+                <p id="recuperarSenha">
+                    <a href="https://chat.openai.com/" target="_blank">Esqueci senha</a>
+                </p>
+                </section>
+            </form>
+    </main>
+</body>
+</html>

@@ -20,14 +20,23 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        background-color: #71936b;
+        background-color: #0a8967;
         width: 300px;
      border: 1px solid #304f2c;
      box-shadow: 0px 0px 3px black;
+     border-radius: 10px;
     }
     main h2{
+        color: white;
         text-align: center;
         margin: 10px 0px;
+    }
+    main form > section > p{
+        background-color: #09c184;
+ 
+    }
+    main form > section > p > label{
+        color: white;
     }
     @media screen and (max-width: 600px) {
         main{
@@ -36,16 +45,35 @@
         }
         main form > section > p{
             margin: 2px;
-            background-color: red;
-            
+                       
         }
         main form > section > p > label{
             font-size: 1.5em;
+            
         }
         main form > section > p > input{
             float: right;
             width: 200px;
             height: 20px;
+        }
+        main form > section#botao{
+            text-align: center;
+        }
+        main form > section > button{
+            font-size: 1.6em;
+            text-align: center;
+            padding: 0px 111px;
+            
+        }
+        main form > section#botao > p{
+            margin-top: 5px;
+        }
+        main form > section >p> a{
+            text-decoration: none;
+              color: red;
+              font-size: 1.6em;
+              background-color: white;
+              padding: 2px 62px;
         }
     }
 </style>
@@ -65,7 +93,7 @@
                     </p>
                 
                 </section>
-                <section>
+                <section id="botao">
                     <button type="submit"><p>Entrar</p></button>
                 
                 <p id="recuperarSenha">
